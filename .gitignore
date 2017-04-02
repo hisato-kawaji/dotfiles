@@ -1,3 +1,5 @@
+/*
+/.*
 !/.gitconfig
 !/.vim
 !/.vimrc
@@ -5,11 +7,10 @@
 !/.bash_profile
 !/.config/*
 !/brew.sh
+!/nvim_dein/*
 !/pip_list
 !/gem_list
 !/envinstall.sh
 !/pip_list
 !/gem_list
 !/update_lib.sh
-/*
-/.*
