@@ -1,0 +1,58 @@
+[user]
+    name = hisato-kawaji
+    email = hisato.kawaji@gmail.com
+[core]
+    excludesfile = /Users/hisatokawaji/.gitignore_global
+[difftool "sourcetree"]
+    cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+    path = 
+[core]
+    editor = vim
+    excludesfile = ~/.gitignore
+    paper = lv -c
+    pager = lv -c
+[push]
+    default = tracking
+[color]
+    ui = auto
+    branch = auto
+    diff = auto
+    status = auto
+    interactive = auto
+    grep = auto
+[alias]
+    co = checkout
+    ci = commit
+    st = status
+    up = pull
+    pull = pull --rebase
+    llog = log --date=local
+    logp = log --pretty=oneline
+    logps = log --pretty=oneline --stat
+    graph = log --graph --pretty=\"format:%an | %s\"
+    ls = log --stat
+    lp = log -p
+    la = log --pretty=\"format:%ad %h (%an) : %s\"
+    lr = log origin
+    log-graph = log --graph --date=short --pretty=format:"%Cgreen%h %cd %Cblue%cn %Creset%s"
+    log-all = log --graph --all --color --pretty='%x09%s %cm%x09%s %Cred%d%Creset'
+    #branches
+    br = branch
+    ba = branch -a
+    bm = branch --merged
+    bn = branch --no-merged
+    #log
+    wc = whatchanged
+    oneline = log --pretty=oneline
+    ranking = shortlog -s -n --no-merges
+    edit-unmergred ="if() { git ls-files --unmerged | cut f2 | sort -u ; }; vim `f`"
+    edit-unmergred ="if() { git ls-files --unmerged | cut f2 | sort -u ; }; git add `f`"
+    gr = grep
+    gn = grep -n
+
+[i18n]
+    commitencoding = UTF-8
+[filter "media"]
+    clean = git-media-clean %f
+    smudge = git-media-smudge %f
+[init]
