@@ -3,7 +3,13 @@
 !/.vimrc
 !/.bashrc
 !/.bash_profile
-!/nvim
+!/.config/*
 !/brew.sh
+!/pip_list
+!/gem_list
+!/envinstall.sh
+!/pip_list
+!/gem_list
+!/update_lib.sh
 /*
 /.*
