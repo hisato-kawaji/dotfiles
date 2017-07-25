@@ -23,5 +23,7 @@ export SCALA_HOME=/usr/local/share/scala
 export PATH="$HOME/.phpenv/bin:$PATH"
 eval "$(phpenv init -)"
 alias nv='nvim'
+alias _jn='nvim'
+eval "$(direnv hook bash)"
 
 export PS1="\[\e[0;37;44m\]\u\[\e[00m\]@[\[\e[0;36m\]\t\[\[\e[00m\]] \w\n \\$ "
