@@ -8,6 +8,9 @@ let g:lsp_signs_warning = {'text': '‼'}
 let g:lsp_signs_information = {'text': 'i'}
 let g:lsp_signs_hint = {'text': '?'}
 
+
+let s:pyls_path = fnamemodify(g:python3_host_prog, ':h') . '/'. 'pyls'
+
 if (executable('pyls'))
     " pylsの起動定義
     augroup LspPython
