@@ -8,7 +8,6 @@ let g:lsp_signs_warning = {'text': '‼'}
 let g:lsp_signs_information = {'text': 'i'}
 let g:lsp_signs_hint = {'text': '?'}
 
-
 let s:pyls_path = fnamemodify(g:python3_host_prog, ':h') . '/'. 'pyls'
 
 if (executable('pyls'))
@@ -16,10 +15,13 @@ if (executable('pyls'))
     augroup LspPython
         autocmd!
         autocmd User lsp_setup call lsp#register_server({
-            \ 'name': 'pyls',
-            \ 'cmd': { server_info -> ['pyls'] },
-            \ 'whitelist': ['python'],
-            \})
+      \ 'name': 'pyls',
+      \ 'cmd': { server_info -> [expand(s:pyls_path)] },
+      \ 'whitelist': ['python'],
+      \ 'workspace_config': {'pyls': {'plugins': {
+      \   'pycodestyle': {'enabled': v:true},
+      \   'jedi_definition': {'follow_imports': v:true, 'follow_builtin_imports': v:true},}}}
+      \ })
     augroup END
 endif
 
@@ -48,4 +50,4 @@ nnoremap <LocalLeader>f :<C-u>LspDocumentDiagnostics<CR>
 " テキスト整形
 nnoremap <LocalLeader>s :<C-u>LspDocumentFormat<CR>
 " オムニ補完を利用する場合、定義の追加
-set omnifunc=lsp#complete
+set omnifunc=lsp#complets
