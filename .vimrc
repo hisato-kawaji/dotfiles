@@ -11,25 +11,25 @@ endif
 
 call neobundle#begin(expand('~/.vim/bundle'))
 
-NeoBundleFetch 'Shougo/neobundle.vim'
-
-" コード補完
-NeoBundle 'Shougo/neocomplete.vim'
-NeoBundle 'marcus/rsense'
-NeoBundle 'Shougo/neocomplcache-rsense.vim'
-
-" 静的解析
-NeoBundle 'scrooloose/syntastic'
-
-" ドキュメント参照
-NeoBundle 'thinca/vim-ref'
-NeoBundle 'yuku-t/vim-ref-ri'
-
-" メソッド定義元へのジャンプ
-NeoBundle 'szw/vim-tags'
-
-" 自動で閉じる
-NeoBundle 'tpope/vim-endwise'
+  NeoBundleFetch 'Shougo/neobundle.vim'
+  
+  " コード補完
+  NeoBundle 'Shougo/neocomplete.vim'
+  NeoBundle 'marcus/rsense'
+  NeoBundle 'Shougo/neocomplcache-rsense.vim'
+  
+  " 静的解析
+  NeoBundle 'scrooloose/syntastic'
+  
+  " ドキュメント参照
+  NeoBundle 'thinca/vim-ref'
+  NeoBundle 'yuku-t/vim-ref-ri'
+  
+  " メソッド定義元へのジャンプ
+  NeoBundle 'szw/vim-tags'
+  
+  " 自動で閉じる
+  NeoBundle 'tpope/vim-endwise'
 
 call neobundle#end()
 

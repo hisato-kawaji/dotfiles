@@ -20,8 +20,6 @@ eval "$(pyenv virtualenv-init -)"
 export PATH=$PATH:/usr/local/share/scala/bin
 export SCALA_HOME=/usr/local/share/scala
 
-export PATH="$HOME/.phpenv/bin:$PATH"
-eval "$(phpenv init -)"
 alias nv='nvim'
 alias _jn='jupyter notebook'
 eval "$(direnv hook bash)"

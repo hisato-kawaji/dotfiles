@@ -1,11 +1,7 @@
 let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =9
-let g:netrw_dirhist_1='/Users/hisatokawaji/.vim'
-let g:netrw_dirhist_2='/Users/hisatokawaji/Desktop/marriage/rapp/app/views/parties'
-let g:netrw_dirhist_3='/Users/hisatokawaji/Desktop/marriage/.git/info'
-let g:netrw_dirhist_4='/Users/hisatokawaji/Desktop/smartdrive/knife-solo-smartdrive/cookbooks/sensu'
-let g:netrw_dirhist_5='/Users/hisatokawaji/Desktop/smartdrive/SmartDriveServer/app/controllers/app'
-let g:netrw_dirhist_6='/Users/hisatokawaji/.vim/bundle/neosnippet'
-let g:netrw_dirhist_7='/Users/hisatokawaji/.vim/bundle/switch.vim'
-let g:netrw_dirhist_8='/Users/hisatokawaji/dev/netstand-api/config'
-let g:netrw_dirhist_9='/Users/hisatokawaji/.config'
+let g:netrw_dirhist_cnt =5
+let g:netrw_dirhist_1='/Users/hisatokawaji/.config'
+let g:netrw_dirhist_2='/Users/hisatokawaji/.config/nvim/bundle/neobundle.vim'
+let g:netrw_dirhist_3='/Users/hisatokawaji/.config/nvim/bundle'
+let g:netrw_dirhist_4='/Users/hisatokawaji/.config/nvim/bundle/neobundle.vim'
+let g:netrw_dirhist_5='/Users/hisatokawaji/.config/nvim/bundle/neobundle.vim/bin'
