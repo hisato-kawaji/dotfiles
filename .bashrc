@@ -5,6 +5,8 @@ alias ctags='/usr/local/Cellar/ctags/5.8/bin/ctags'
 export PATH="/usr/local/heroku/bin:$PATH"
 #export PATH="/usr/local/mysql/bin:$PATH"
 source $HOME/.git-completion.bash
+
+
 export RBENV_ROOT="$HOME/.rbenv"
 if [ -d $RBENV_ROOT ]; then
   export PATH="$RBENV_ROOT/bin:$PATH"
@@ -12,10 +14,6 @@ if [ -d $RBENV_ROOT ]; then
 fi
 export PATH=$HOME/.nodebrew/current/bin:$PATH
 export GOPATH=$HOME/dev/go/
-
-export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
 
 export PATH=$PATH:/usr/local/share/scala/bin
 export SCALA_HOME=/usr/local/share/scala
