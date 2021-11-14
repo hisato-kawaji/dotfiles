@@ -20,6 +20,8 @@ export SCALA_HOME=/usr/local/share/scala
 
 alias nv='nvim'
 alias _jn='jupyter notebook'
+alias _work='cd ~/dev/workspace/'`
+alias _leet='cd ~/dev/workspace/leetcode'`
 eval "$(direnv hook bash)"
 
 export PS1="\[\e[0;37;44m\]\u\[\e[00m\]@[\[\e[0;36m\]\t\[\[\e[00m\]] \w\n \\$ "

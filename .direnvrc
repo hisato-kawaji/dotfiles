@@ -1,0 +1,17 @@
+use_nvm() {
+  if [ $# -gt 1 ]; then
+    echo "No arguments supplied"
+    return
+  fi
+
+  local node_version=$1
+  nvm_sh=~/.nvm/nvm.sh
+  if [[ -e $nvm_sh ]]; then
+    source $nvm_sh
+    if [ -z "$1" ]; then
+      nvm use $node_version
+    else
+      nvm use 
+    fi
+  fi
+}
