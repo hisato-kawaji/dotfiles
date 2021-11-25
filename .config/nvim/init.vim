@@ -19,10 +19,8 @@ if &compatible
   set nocompatible 
 endif
 
-let g:python_host_prog  = '/Users/hisatokawaji/.pyenv/shims/python'
-let g:python3_host_prog = '/Users/hisatokawaji/.pyenv/shims/python'
-
-let g:node_host_prog = '/Users/hisatokawaji/.nvm/versions/node/v14.18.1/bin/node'
+let g:python_host_prog  = '~/.pyenv/shims/python'
+let g:python3_host_prog = '~/.pyenv/shims/python'
 
 augroup LspAutoFormatting
   autocmd!
@@ -31,6 +29,7 @@ augroup LspAutoFormatting
   autocmd BufWritePre *.jsx LspDocumentFormatSync
   autocmd BufWritePre *.ts LspDocumentFormatSync
   autocmd BufWritePre *.tsx LspDocumentFormatSync
+  autocmd BufWritePre *.rs LspDocumentFormatSync
 augroup END
 
 
@@ -54,6 +53,6 @@ endif
 filetype plugin indent on 
 
 if dein#check_install() 
-call dein#install()
+   call dein#install()
 endif 
 

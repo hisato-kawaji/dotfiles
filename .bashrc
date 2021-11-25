@@ -18,6 +18,7 @@ export GOPATH=$HOME/dev/go/
 export PATH=$PATH:/usr/local/share/scala/bin
 export SCALA_HOME=/usr/local/share/scala
 
+
 alias nv='nvim'
 alias leet='leetcode'
 alias _jn='jupyter notebook'
@@ -42,3 +43,4 @@ alias _utf8='nkf -w'
 eval "$(direnv hook bash)"
 
 export PS1="\[\e[0;37;44m\]\u\[\e[00m\]@[\[\e[0;36m\]\t\[\[\e[00m\]] \w\n \\$ "
+. "$HOME/.cargo/env"

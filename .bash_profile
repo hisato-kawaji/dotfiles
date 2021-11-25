@@ -2,7 +2,6 @@ export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 
 export PYENV_SHELL="bash"
-export PATH="$HOME/.cargo/bin:$PATH"
 export PYENV_ROOT="$HOME/.pyenv"
 export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init --path)"
@@ -54,3 +53,4 @@ _yargs_completions()
 complete -F _yargs_completions leetcode
 ###-end-leetcode-completions-###
 
+. "$HOME/.cargo/env"

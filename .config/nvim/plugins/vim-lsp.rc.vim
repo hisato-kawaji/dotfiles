@@ -37,6 +37,20 @@ if executable('typescript-language-server')
     augroup END
 endif
 
+
+if executable('rustup')
+    augroup LspRust
+        autocmd!
+        autocmd User lsp_setup call lsp#register_server({
+            \ 'name': 'rustup',
+            \ 'cmd': {server_info->[&shell, &shellcmdflag, 'rustup run stable rls']},
+            \ 'root_uri':{server_info->lsp#utils#path_to_uri(lsp#utils#find_nearest_parent_file_directory(lsp#utils#get_buffer_path(), 'Cargo.toml'))},
+            \ 'whitelist': ['rust'],
+            \})
+    augroup END
+endif
+
+
 " 定義ジャンプ(デフォルトのctagsによるジャンプを上書きしているのでこのあたりは好みが別れます)
 nnoremap <C-]> :<C-u>LspDefinition<CR>
 " 定義情報のホバー表示
